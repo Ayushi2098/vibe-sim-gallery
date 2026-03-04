@@ -17,10 +17,10 @@ interface SimulationContainerProps {
 }
 
 export const SimulationContainer: React.FC<SimulationContainerProps> = ({
-    title,
+    title: _title,
     subtitle,
     description,
-    tooltip,
+    tooltip: _tooltip,
     children,
     height = 800,
     viewBox,

@@ -6,7 +6,8 @@
     "dev": "concurrently \"npm run server\" \"vite\"",
     "server": "nodemon server/index.js",
     "lint": "tsc --noEmit",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "build:check": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

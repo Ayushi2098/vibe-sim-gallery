@@ -29,14 +29,6 @@ export const QuadraticMatchGraph: React.FC = () => {
         Math.abs(userK - targetK) < matchThreshold &&
         Math.abs(a - targetA) < 0.1;
 
-    // Generate random target
-    const generateNewTarget = () => {
-        setTargetA(Math.random() > 0.5 ? 1 : -1);
-        setTargetH(Math.floor(Math.random() * 6) - 3);
-        setTargetK(Math.floor(Math.random() * 6) - 3);
-        vertex.setPoint([0, 0]);
-        setA(1);
-    };
 
     return (
         <div style={{ padding: '4px', color: '#f8fafc' }}>

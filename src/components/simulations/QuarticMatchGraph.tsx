@@ -30,17 +30,6 @@ export const QuarticMatchGraph: React.FC = () => {
         setIsMatched(matched);
     }, [p1.x, p2.x, p3.x, p4.x, targetR1, targetR2, targetR3, targetR4]);
 
-    const generateNewTarget = () => {
-        const roots = Array.from({ length: 4 }, () => Math.floor(Math.random() * 6) - 3);
-        setTargetR1(roots[0]);
-        setTargetR2(roots[1]);
-        setTargetR3(roots[2]);
-        setTargetR4(roots[3]);
-        p1.setPoint([-4, 0]);
-        p2.setPoint([-3, 0]);
-        p3.setPoint([3, 0]);
-        p4.setPoint([4, 0]);
-    };
 
     return (
         <div style={{ padding: '4px', color: '#f8fafc' }}>
